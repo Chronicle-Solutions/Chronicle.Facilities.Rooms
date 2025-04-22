@@ -13,7 +13,7 @@ namespace Chronicle.Facilities.Rooms
         public string PluginName => "Manage Rooms";
         public string PluginDescription => "";
 
-        public Version Version => new Version("0.0.0.1a");
+        public Version Version => new Version("0.0.0.1");
 
         public int Execute()
         {
