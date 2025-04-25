@@ -28,22 +28,22 @@ namespace Chronicle.Facilities.Rooms.Objects
         [DisplayName("Room Name")]
         public string RoomName { get; set; }
 
-        [Category("Audit Info")]
+        [Category("Audit")]
         [DisplayName("Created By")]
         [ReadOnly(true)]
         public string CreatedBy { get; set; }
 
-        [Category("Audit Info")]
+        [Category("Audit")]
         [DisplayName("Created Date")]
         [ReadOnly(true)]
         public DateTime CreatedDate { get; set; }
 
-        [Category("Audit Info")]
+        [Category("Audit")]
         [DisplayName("Updated By")]
         [ReadOnly(true)]
         public string UpdatedBy { get; set; }
 
-        [Category("Audit Info")]
+        [Category("Audit")]
         [DisplayName("Updated Date")]
         [ReadOnly(true)]
         public DateTime UpdatedDate { get; set; }
@@ -65,6 +65,18 @@ namespace Chronicle.Facilities.Rooms.Objects
         [DisplayName("Notes")]
        // [Editor(typeof(BuildingHoursCollectionEditor), typeof(UITypeEditor))]
         public List<roomNotes> Notes { get; set; } = new List<roomNotes>();
+
+        [Category("Room Info")]
+        [DisplayName("Room Features")]
+        public List<roomFeatures> Features { get; set; } = new List<roomFeatures>();
+
+        [Category("Classification")]
+        [DisplayName("Room Type")]
+        public roomType RoomType { get; set; } = roomType.Standard;
+
+        [Category("Classification")]
+        [DisplayName("Component Rooms")]
+        public List<componentSpace> componentSpaces { get; set; } = new List<componentSpace>();
 
     }
 }
