@@ -24,7 +24,6 @@ namespace Chronicle.Facilities.Rooms
             lvwColumnSorter = new ListViewColumnSorter();
             listView1.ListViewItemSorter = lvwColumnSorter;
             selectedItem = allToolStripMenuItem;
-            MenuUtils.populateMenu(menuToolStripMenuItem.DropDownItems, "/");
             getBuildingNames();
             populateRooms("(all)");
         }

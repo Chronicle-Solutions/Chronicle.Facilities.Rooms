@@ -61,7 +61,6 @@ namespace Chronicle.Facilities.Rooms
             searchToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator5 = new ToolStripSeparator();
             aboutToolStripMenuItem = new ToolStripMenuItem();
-            menuToolStripMenuItem = new ToolStripMenuItem();
             filterToolStripMenuItem = new ToolStripMenuItem();
             allToolStripMenuItem = new ToolStripMenuItem();
             listView1 = new ListView();
@@ -80,7 +79,7 @@ namespace Chronicle.Facilities.Rooms
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, toolsToolStripMenuItem, helpToolStripMenuItem, menuToolStripMenuItem, filterToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, toolsToolStripMenuItem, helpToolStripMenuItem, filterToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -286,12 +285,6 @@ namespace Chronicle.Facilities.Rooms
             aboutToolStripMenuItem.Size = new Size(122, 22);
             aboutToolStripMenuItem.Text = "&About...";
             // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(50, 20);
-            menuToolStripMenuItem.Text = "Menu";
-            // 
             // filterToolStripMenuItem
             // 
             filterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { allToolStripMenuItem });
@@ -304,7 +297,7 @@ namespace Chronicle.Facilities.Rooms
             allToolStripMenuItem.Checked = true;
             allToolStripMenuItem.CheckState = CheckState.Checked;
             allToolStripMenuItem.Name = "allToolStripMenuItem";
-            allToolStripMenuItem.Size = new Size(94, 22);
+            allToolStripMenuItem.Size = new Size(180, 22);
             allToolStripMenuItem.Text = "(all)";
             allToolStripMenuItem.Click += onFilterClick;
             // 
@@ -425,7 +418,6 @@ namespace Chronicle.Facilities.Rooms
         private ToolStripMenuItem searchToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator5;
         private ToolStripMenuItem aboutToolStripMenuItem;
-        private ToolStripMenuItem menuToolStripMenuItem;
         private ToolStripMenuItem filterToolStripMenuItem;
         private ToolStripMenuItem allToolStripMenuItem;
         private ColumnHeader buildingCode;
