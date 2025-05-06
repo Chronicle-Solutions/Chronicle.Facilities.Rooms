@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
+using Chronicle.Controls;
 namespace Chronicle.Facilities.Rooms
 {
     partial class Rooms
@@ -31,7 +32,7 @@ namespace Chronicle.Facilities.Rooms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rooms));
-            menuStrip1 = new MenuStrip();
+            menuStrip1 = new NavMenu();
             fileToolStripMenuItem = new ToolStripMenuItem();
             newToolStripMenuItem1 = new ToolStripMenuItem();
             openToolStripMenuItem = new ToolStripMenuItem();
@@ -85,6 +86,7 @@ namespace Chronicle.Facilities.Rooms
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
+            menuStrip1.populate(true);
             // 
             // fileToolStripMenuItem
             // 
@@ -382,7 +384,7 @@ namespace Chronicle.Facilities.Rooms
 
         #endregion
 
-        private MenuStrip menuStrip1;
+        private NavMenu menuStrip1;
         private ListView listView1;
         private ColumnHeader roomID;
         private ColumnHeader roomCode;
