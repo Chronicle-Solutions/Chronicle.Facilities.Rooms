@@ -76,7 +76,7 @@ namespace Chronicle.Facilities.Rooms
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    ToolStripMenuItem item = categories.FirstOrDefault(item => item.Text[0] == reader.GetString("buildingName")[0]);
+                    ToolStripMenuItem? item = categories.FirstOrDefault(item => (item?.Text?[0] ?? '\0') == reader.GetString("buildingName")[0]);
                     if (item is null)
                     {
                         item = new ToolStripMenuItem();

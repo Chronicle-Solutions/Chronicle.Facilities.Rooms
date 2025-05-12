@@ -21,12 +21,12 @@ namespace Chronicle.Facilities.Rooms.Objects
         [DisplayName("Added By")]
         [Description("The OperatorID of the user who created this object")]
         [ReadOnly(true)]
-        public string addedBy { get; set; }
+        public string? addedBy { get; set; }
         [Category("Audit")]
         [DisplayName("Last Updated By")]
         [Description("The OperatorID of the user who last updated this object")]
         [ReadOnly(true)]
-        public string updatedBy { get; set; }
+        public string? updatedBy { get; set; }
 
         [Category("Audit")]
         [DisplayName("Added DateTime")]

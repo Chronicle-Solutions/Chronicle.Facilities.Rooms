@@ -57,7 +57,7 @@ namespace Chronicle.Facilities.Rooms.Objects
         [Category("Audit")]
         [DisplayName("Created By")]
         [ReadOnly(true)]
-        public string CreatedBy { get; set; }
+        public string? CreatedBy { get; set; }
 
         [Category("Audit")]
         [DisplayName("Created Date")]
@@ -67,7 +67,7 @@ namespace Chronicle.Facilities.Rooms.Objects
         [Category("Audit")]
         [DisplayName("Updated By")]
         [ReadOnly(true)]
-        public string UpdatedBy { get; set; }
+        public string? UpdatedBy { get; set; }
 
         [Category("Audit")]
         [DisplayName("Updated Date")]
@@ -87,17 +87,17 @@ namespace Chronicle.Facilities.Rooms.Objects
         [Category("Component Data")]
         [DisplayName("Building Code")]
         [ReadOnly(true)]
-        public string buildingCode {get; set;}
+        public string? buildingCode {get; set;}
 
         [Category("Component Data")]
         [DisplayName("Room Code")]
         [ReadOnly(true)]
-        public string roomCode { get; set; }
+        public string? roomCode { get; set; }
 
         [Category("Component Data")]
         [DisplayName("Room Name")]
         [ReadOnly(true)]
-        public string roomName { get; set; }
+        public string? roomName { get; set; }
 
         #endregion
     }

@@ -12,7 +12,7 @@ namespace Chronicle.Facilities.Rooms.Objects
         [Category("Building Info")]
         [DisplayName("Building Name")]
         [TypeConverter(typeof(BuildingConverter))]
-        public string BuildingName { get; set; }
+        public string? BuildingName { get; set; }
 
         [ReadOnly(true)]
         [Category("Audit")]
@@ -22,16 +22,16 @@ namespace Chronicle.Facilities.Rooms.Objects
 
         [Category("Room Info")]
         [DisplayName("Room Code")]
-        public string RoomCode { get; set; }
+        public string? RoomCode { get; set; }
 
         [Category("Room Info")]
         [DisplayName("Room Name")]
-        public string RoomName { get; set; }
+        public string? RoomName { get; set; }
 
         [Category("Audit")]
         [DisplayName("Created By")]
         [ReadOnly(true)]
-        public string CreatedBy { get; set; }
+        public string? CreatedBy { get; set; }
 
         [Category("Audit")]
         [DisplayName("Created Date")]
@@ -41,7 +41,7 @@ namespace Chronicle.Facilities.Rooms.Objects
         [Category("Audit")]
         [DisplayName("Updated By")]
         [ReadOnly(true)]
-        public string UpdatedBy { get; set; }
+        public string? UpdatedBy { get; set; }
 
         [Category("Audit")]
         [DisplayName("Updated Date")]

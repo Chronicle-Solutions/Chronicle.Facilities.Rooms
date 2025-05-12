@@ -10,12 +10,12 @@ namespace Chronicle.Facilities.Rooms
 {
     internal class ChronicleRooms : IPlugable
     {
-        public string PluginName => "Manage Rooms";
-        public string PluginDescription => "";
+        public override string PluginName => "Manage Rooms";
+        public override string PluginDescription => "";
 
-        public Version Version => new Version("0.0.0.1");
+        public override Version Version => new Version("0.0.0.1");
 
-        public int Execute()
+        public override int Execute()
         {
             Rooms r = new();
             r.Show();
